@@ -1,7 +1,9 @@
 function crearJuego() {
+   //obtiene la dificultad
    let selectDificutad = document.getElementById("dificultad");
    let dificultad = selectDificutad.value;
 
+   let filas, columnas;
    switch (dificultad) {
       case "facil":
          filas = 8;
@@ -21,7 +23,7 @@ function crearJuego() {
          break;
    }
 
-
+   //crea la matriz vacia
    let matrizJuego = [];
    for (let i = 0; i < filas; i++) {
       matrizJuego.push([]);
@@ -30,9 +32,8 @@ function crearJuego() {
       }
    }
 
-
+   //crea el html para la interfaz del juego
    let contenidoHTML = '';
-
    for (let i = 0; i < filas; i++) {
       contenidoHTML += '<div class="row">';
 
