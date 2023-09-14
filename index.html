@@ -13,7 +13,6 @@
 <body>
   <h1 id=titulo>Buscaminas</h1>
 
-  <div>
     <div>
       <label for="">Elija la dificutad</label>
       <select id="dificultad">
@@ -23,12 +22,13 @@
       </select>
     </div>
     <!-- modificar boton por simbolo original buscaminas -->
-    <div>
+    <div class="div-boton">
       <input class="boton-iniciar" type="button" onclick="crearJuego()" value="Iniciar">
     </div>
 
-    <div id="cont-juego"></div>
-  </div>
+    <div class="marco-juego">
+      <div id="cont-juego"></div>
+    </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
