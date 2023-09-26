@@ -1,8 +1,26 @@
 body {
+    background-image: url(./fotos/img1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     display: grid;
     place-content: center;
-    background-color: rgb(85, 85, 85);
     text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+#cronometro {
+    font-family: 'Courier New', monospace;
+    position: relative;
+    left: 10px;
+    top: 10px;
+    background-color: black;
+    color: red;
+    padding: 5px;
+    border-radius: 5px;
+    width: 60px;
+    height: 30px;
 }
 
 #cont-juego {
@@ -21,7 +39,8 @@ body {
     margin: 1px;
 }
 
-.marco-juego {
+#marco-juego {
+    background-color: rgb(202, 202, 202);
     border: 4px solid black;
 }
 
